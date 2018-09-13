@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Veterinarias</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../../DocumentosCSS/EVeterinaria.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+        <script src="../../JavaScript/MapaVete.js"></script>
+    </head>
+    <body>
+        <form onload="initMap()">
+             <header>
+           <nav>
+               <ul>     
+                   <li id="Letras"><a href="../../PaginaPrincipal/index.jsp">Inicio</a></li>
+               </ul> 
+               <img id="logo" src="../../Resourses/Images/huella.png" >
+               
+               <ul>     
+                   <li id="Letras"><a href="../../BuscaServicio/Busca.html">Regresar</a></li>
+               </ul> 
+           </nav> 
+           
+        </header>
+            <section id="banner">
+           
+        </section>
+            <section id="body">
+        <br> <br>
+        <h1 align="center">V E T E R I N A R I A S</h1>
+        <br> <br>
+    <center><div id="map"></div> </center>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARgx2gZi4L4BVMC_TUdZh9a3l769l2o9I&callback=initMap"> 
+    </script>
+            </section>
+            <BR> <BR> <BR>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Contactanos</title>
+        <link rel="shortcut icon" type="image/png" href="../Resourses/Images/logoPP.png"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel=StyleSheet href="../DocumentosCSS/EQuejas.css" type="text/css" media=screen>
+        <script src="../JavaScript/Registro.js"></script>
+        <script>
+            function click(){
+                if(event.button==2){
+                   alert('No es posible realizar esta acción');
+                }
+            }
+            document.onmousedown = click
+        </script>
+        
+        
+        
+        
+        <script type="text/javascript">
+            function disbaleCopyPaste(elm){
+                // Deshabilitar los eventos cut/copy/paste
+                elm.onkeydown = interceptKeys
+                elm.oncontextmenu = function(){
+                        return false
+                }
+                    }
+
+            function interceptKeys(evt) {
+                evt = evt||window.event // IE support
+                var c = evt.keyCode
+                var ctrlDown = evt.ctrlKey||evt.metaKey // Mac
+                if (ctrlDown && evt.altKey) return true
+                // Verifica los ctrl + c, v y x
+                else if (ctrlDown && c==67) return false // c
+                else if (ctrlDown && c==86) return false // v
+                else if (ctrlDown && c==88) return false // x
+
+                return true
+            }
+
+        </script>
+        
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.12';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <center>
+        <div class="mensaje">
+            <center><p class="titulo">PONTE EN CONTACTO CON NOSOTROS</p></center><br>
+            Queja<input type="radio" name="radio" value="Queja"> Sugerencia<input type="radio" name="radio" value="Sugerencia"> Duda<input type="radio" name="radio" value="Duda">
+            <form action="/JPS/EnvioEmail.jsp" method="post">
+                <input type="email" class="texto" id="correo" name="de" placeholder="Correo electrónico" 
+                       onfocus = " return disbaleCopyPaste(elm)" 
+                       autocomplete="off" 
+                       onkeypress="nojaks(this)"
+                       onkeydown = "return interceptKeys(event)"
+                       required>
+                <input type="password" class="texto" id="contra" name="contra" placeholder="Contraseña"
+                       onfocus = " return disbaleCopyPaste(elm)" 
+                       autocomplete="off" 
+                       onkeypress="nojaks(this)"
+                       onkeydown = "return interceptKeys(event)"
+                       required><br><br>
+                <textarea id="texto" name="contenido" placeholder="Deja aquí tu mensaje" required></textarea>
+                <input type="submit" id="Enviar" value="Enviar" name="Enviar"><br>
+                <p class="notas">*La contraseña debe coincidir con la contraseña del correo electrónico propocionado anteriormente</p>
+                <p class="notas">Los datos proporcionados serán enviados al administrador de la página con el fin de contribuir al desarrollo de la misma, cualquier dato proporcionado será únicamente visible para el administrador.*</p>
+            </form>
+        </div>
+        </center>
+        <div class="comentario">
+            <div class="fb-comments" data-href="http://localhost:8084/Quejas/Quejas.html" data-width="600" data-numposts="5"></div>
+        </div>
+    </body>
+</html>
+

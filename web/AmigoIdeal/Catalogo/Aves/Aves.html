@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aves</title>
+        <link rel="shortcut icon" type="image/png" href="../../../Resourses/Images/ave.png"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../../DocumentosCSS/EAves.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="../../../JavaScript/Aves.js"></script>
+        <script src="../../../JavaScript/jquery.dataTables.min.js"></script>        
+    </head>
+    <body>
+       <header>
+           <nav>
+        <ul> 
+            <li><a href="../../../AmigoIdeal/Ideal.html"  class="men">Regresar</a></li>
+       </ul> 
+       <img id="logo" src="../../../Resourses/Images/ave.png" >   
+       <ul>   
+           <div class="navegacion">                          
+            <li><input type="search" placeholder="Buscar ..." id="inputBusqueda" class="buscador"></li>                
+        </div>   
+        <div class="search" id="search">
+           <table class="search.table" id="searchTable">
+                <thead>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       <td> <a onclick="hideSearch()" href="#uno">Patos</a></td> 
+                    </tr>
+                  <tr>
+                     <td> <a onclick="hideSearch()" href="#dos">Canarios</a></td> 
+                  </tr>
+                  <tr>
+                     <td> <a onclick="hideSearch()" href="#tres">Loro</a></td> 
+                  </tr>
+                  <tr>
+                     <td> <a onclick="hideSearch()" href="#cuatro">Pericos</a> </td>
+                  </tr>
+                  <tr>
+                      <!--Tu evento onclick que invoca la funcon a onclickear-->
+                     <td> <a onclick="hideSearch()" href="#cinco">Cacatua</a></td>
+                  </tr>
+                  <tr>
+                      <td> <a onclick="hideSearch()" href="#seis">Paloma</a> </td>
+                  </tr>
+
+                </tbody>
+           </table>
+        </div>
+       </ul> 
+   </nav> 
+           
+        </header>
+        <section id="banner">
+           
+        </section>
+        <section id="body">
+            <div style="float: left; display: table; width: 20%;height: 100%"></div>
+            <div style="float: left; display: table; width: 60%;height: 100%">
+              
+                <div class="contenedor" id="uno" ><img src="../../../Resourses/Images/pato1.jpg" id="h">
+              <p class="texto"><a href="#openModal">Patos</a></p></div>
+              <div id="openModal" class="algo">
+                  <div>
+                      <a href="#close" title="Close" class="close" onclick="close();"><div style="float: left"></div><div class="tache"><img src="../../../Resourses/Images/close.svg" width=30 height=20></div></a> 
+                    <div class="title">  <h1><b>PATOS</b></h1></div>
+                      <p>Algunos patos se alimentan principalmente de la vegetación y de los invertebrados 
+                          adultos que se encuentran cerca de la superficie del agua. Otros se alimentan de 
+                          plantas acuáticas a poca profundidad y de los invertebrados inmaduros que se esconden 
+                          en el fondo fangoso de estanques y lagos. Llegan a vivir de 15 a 20 años. Su comportamiento
+                          está muy sincronizado con los cambios climáticos estacionales y se ajusta a ellos.</p>
+                      <img src="../../../Resourses/Images/pato2.jpg" width=30% height=20% class="ABC">
+                      <img src="../../../Resourses/Images/pato3.jpeg" width=30% height=20% class="ABC">
+                      <a href="http://www.foodispower.org/es/los-patos/"><p>Más informacián...</p></a>
+                  </div>
+              </div>
+              
+              <div class="contenedor" id="dos"><img src="../../../Resourses/Images/canario1.jpg" id="h">
+              <p class="texto"><a href="#openModal2">Canario</a></p></div>
+              <div id="openModal2" class="algo">
+                <div>
+                    <a href="#close" title="Close" class="close" onclick="close();"><div style="float: left"></div><div class="tache"><img src="../../../Resourses/Images/close.svg" width=30 height=20></div></a> 
+
+                    <h1>CANARIO</h1>
+                    <p>Generalmente la mayor parte posee un tamaño que ronda los 13 o 14 cm. Su esperanza de vida es, 
+                        según la raza, de 6 a 15 años, algunos incluso llegan a una edad de 20 años. 
+                        Su dieta se compone principalmente de semillas, tales como las de las malas hierbas, 
+                        las de poáceas y frutos. También se alimenta de otros partes vegetales y de pequeños insectos.</p>
+                    
+                    <br>
+                    <img src="../../../Resourses/Images/canario2.jpg" width=40% height=45% class="ABC">
+                    <a href="https://www.anipedia.net/pajaros/canarios/"><p>Más información...</p></a>
+
+                </div>
+            </div>
+             
+              <div class="contenedor" id="tres"><a href="#Modal3"><img src="../../../Resourses/Images/loro1.jpg" id="h">
+             <p class="texto">Loro</p></a></div>
+             <div id="Modal3" class="algo">
+                <div>
+                    <a href="#close" title="Close" class="close" onclick="close();"><div style="float: left"></div><div class="tache"><img src="../../../Resourses/Images/close.svg" width=30 height=20></div></a> 
+                    <h1>LORO</h1>
+                    <p>A los loros domésticos hay que proporcionarles una alimentación adecuada y variada, 
+                        con semillas, como el girasol o el mijo, diversas frutas, etc. Un veterinario especializado 
+                        en mascotas exóticas indicará la mejor dieta para el tipo de loro que se posea, para garantizar
+                        una correcta alimentación que le proporcionará un estado de salud óptimo.</p>
+                         <br>
+                    <img src="../../../Resourses/Images/loro2.jpg" width=40% height=45% class="ABC">
+                    <a href="https://www.nosolomascotas.com/aves/tener_aves/loro_mascota_casa.html"><p>Más información...</p></a>
+
+                </div>
+            </div>
+
+            
+             <div class="contenedor" id="cuatro"><a href="#openModal4"><img src="../../../Resourses/Images/psitacidas.jpg" id="h">
+             <p class="texto">Pericos</p></a></div>
+             <div id="openModal4" class="algo">
+                <div>
+                    <a href="#close" title="Close" class="close" onclick="close();"><div style="float: left"></div><div class="tache"><img src="../../../Resourses/Images/close.svg" width=30 height=20></div></a> 
+                    <h1>PERICOS</h1>
+                    <p>As el más indicado para quienes tienen por primera vez un pájaro como mascota.
+                        Son por lo general animales pequeños (20 cm aproximadamente), que con buenos 
+                        cuidados pueden vivir hasta 12 años. En cuanto a los cuidados de los pericos 
+                        no son muy exigentes: mantener su jaula limpia, en un sitio con buena iluminación,
+                        pero que no le dé de frente el sol, dejarlos salir eventualmente para que vuele un
+                        rato; pueden ser alimentados con avena o alpiste.</p>
+                    <img src="../../../Resourses/Images/psita.jpg" width=40% height=45% class="ABC">
+                    <p><a href="https://www.anipedia.net/pajaros/periquitos/">Más información..</a></p>
+            
+                </div>
+            </div>
+             
+         
+
+             <div class="contenedor" id="cinco"><a href="#modal5"><img src="../../../Resourses/Images/cacatua1.jpg" id="h">
+             <p class="texto">Cacatúa</p></a></div>
+             <div id="modal5" class="algo">
+                <div>
+                    <a href="#close" title="Close" class="close" onclick="close();"><div style="float: left"></div><div class="tache"><img src="../../../Resourses/Images/close.svg" width=30 height=20></div></a> 
+                    <h1>CACATÚA</h1>
+                    <p>Son aves relativamente grandes con 30 centímetros y pueden llegar a vivir 
+                        hasta 25 años. Son aves que inicialmente pueden parecer un tanto nerviosas 
+                        pero que poco a poco van ganando confianza y desarrollando una relación estrecha 
+                        con su propietario, con el tiempo pueden llegar a aprender palabras y silbar 
+                        alguna tonada. Requieren de una jaula grande y la alimentación incluye una mixtura
+                        especial para este tipo de aves además de una porción diaria de frutas y vegetales 
+                        frescos y eventualmente trozos de huevo cocido, o gusanos que se pueden adquirir en 
+                        una tienda especializada.</p>
+                    <img src="../../../Resourses/Images/cacatua2.jpg" width=40% height=45% class="ABC">
+                    <p><a href="http://www.mundoanimalia.com/articulo/la_cacatua_como_pajaro_de_compania">Más información...</a></p>
+
+                </div>
+            </div>
+             
+            <br><br>
+
+             <div class="contenedor" id="seis"><a href="#modal6"><img src="../../../Resourses/Images/paloma1.jpg" id="h" >
+             <p class="texto">Palomas</p></a></div>
+             <div id="modal6" class="algo">
+                <div>
+                    <a href="#close" title="Close" class="close" onclick="close();"><div style="float: left"></div><div class="tache"><img src="../../../Resourses/Images/close.svg" width=30 height=20></div></a> 
+                    <h1>PALOMAS</h1>
+
+                    <p>Palomas y tórtolas. Son buenas voladoras y tienen dieta variada,
+                         aunque son aves herbívoras.</p>
+                         <p>Existen más de 300 especies de diferentes 
+                         formas, tamaños y colores. En realidad, su denominación no hace
+                         referencia a criterios taxonómicos, 
+                        simplemente las palomas son aves más grandes que las tórtolas.</p>
+                    <img src="../../../Resourses/Images/paloma2.jpg" width=40% height=45% class="ABC">
+                    <p><a href="http://www.taxateca.com/ordencolumbiformes.html">Más información...</a></p>
+                </div>
+            </div>
+            </div>
+            <div style="float: left; display: table; width: 20%;height: 100%"></div>
+        </section>
+        <script src="../../../JavaScript/Buscador.js"></script>
+    </body>
+</html>
+
+

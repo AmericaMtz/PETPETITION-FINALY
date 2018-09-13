@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <title>Perros</title>
+        <link rel="shortcut icon" type="image/png" href="../../../Resourses/Images/perro.png"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../../DocumentosCSS/EPerros1.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="../../../JavaScript/Perros.js"></script>
+        <script src="../../../JavaScript/jquery.dataTables.min.js"></script>        
+    </head>
+    <body>
+       <header>
+           <nav>
+               <ul> 
+                    <li><a href="../../../AmigoIdeal/Ideal.html"  class="men">Regresar</a></li>
+               </ul> 
+               <img id="logo" src="../../../Resourses/Images/perro.png" >   
+               <ul>   
+                   <div class="navegacion">                          
+                    <li><input type="search" placeholder="Buscar ..." id="inputBusqueda" class="buscador"></li>                
+                </div>   
+                <div class="search" id="search">
+                   <table class="search.table" id="searchTable">
+                        <thead>
+                            <tr>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                               <td> <a onclick="hideSearch()" href="#uno">Pastor Alemán</td></a> 
+                            </tr>
+                          <tr>
+                             <td> <a onclick="hideSearch()" href="#tres">Terriers</td></a> 
+                          </tr>
+                          <tr>
+                             <td> <a onclick="hideSearch()" href="#cuatro">Perros de trabajo</td></a> 
+                          </tr>
+                          <tr>
+                             <td> <a onclick="hideSearch()" href="#cinco">Bichon Boloñes</td></a> 
+                          </tr>
+                          <tr>
+                              <!--Tu evento onclick que invoca la funcon a onclickear-->
+                             <td> <a onclick="hideSearch()" href="#seis">San Bernardo</td></a> 
+                          </tr>
+                        </tbody>
+                   </table>
+                </div>
+               </ul> 
+           </nav> 
+           
+        </header>
+        <section id="banner">
+           
+        </section>
+        <section id="body">
+            <div style="float: left; display: table; width: 20%;height: 100%"></div>
+            <div style="float: left; display: table; width: 60%;height: 100%" class="wrap">
+                <div class="contenedor" id="uno"><img src="../../../Resourses/Images/pastor.jpg" id="h">
+                    <p class="texto"><a href="#openModal">...Pastor Alemán...</a></p></div>
+         
+                      <div id="openModal" class="algo">
+                    <div>
+                            <a href="#close" title="Close" class="close" onclick="close();"><div style="float: left"></div>
+                              <div class="tache"><img src="../../../Resourses/Images/close.svg" width=30 height=20></div></a> 
+                          <div class="title"> 
+                              <h1><b>...PASTOR ALEMÁN...</b></h1></div>
+                              <br>
+                            <p> Todos estos tipos de perros ovejero alemán dentro de la 
+                                raza son únicos por una variedad de razones. </p>
+                                <P>El aspecto físico, los impulsos, el temperamento y el 
+                                    propósito varían entre las líneas, 
+                                pero todos ellos son ovejeros alemanes por igual.</p>
+                                <br>
+                            <img src="../../../Resourses/Images/alemanx2.jpg" width=40% height=20% class="ABC">
+                            
+                            <img src="../../../Resourses/Images/ALEMAN.jpg" width=35% height=20% class="ABC">
+                            <a href="https://www.pastoraleman10.com/tipos-perros-pastor-aleman/"><p>Más informaciòn...</p></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contenedor" id="tres"><img src="../../../Resourses/Images/terriers.jpg" id="h">
+                   <p class="texto"><a href="#openModal2">...Terriers...</a></p></div>
+                   <div id="openModal2" class="algo">
+                          <div>
+                                  <a href="#close" title="Close" class="close" onclick="close();"><div style="float: left"></div><div class="tache"><img src="../../../Resourses/Images/close.svg" width=30 height=20></div></a> 
+                                <div class="title">  <h1><b>...TERRIERS...</b></h1></div>
+                                <br>
+                                  <p> Un grupo de razas de perros que comparten un origen común, pero
+                                       que tienen características físicas tan diversas que en algunos casos
+                                        resulta difícil pensar que están emparentadas. </p>
+                                        <p>Los perros terrier suelen ser pequeños o medianos, y generalmente tienen un carácter inquieto y decidido. La mayoría de estas razas se originaron en Gran Bretaña, pero existen terrier de diferentes partes del mundo.</p>
+                           </p>
+                                         <img src="../../../Resourses/Images/terri2.jpg" width=30% height=20% class="ABC">
+                                  <img src="../../../Resourses/Images/terri.jpg" width=30% height=20% class="ABC">
+                                  <a href="https://www.expertoanimal.com/razas-de-perros-terrier-21108.html"><p>Más información...</p></a>
+                              </div>
+                          </div>
+                   
+                   <div class="contenedor" id="cuatro"><img src="../../../Resourses/Images/trabajo.jpg" id="h">
+                   <p class="texto"><a href="#ki">...Perros de Trabajo...</a></p></div>
+                   <div id="ki" class="algo">
+                          <div>
+                                  <a href="#close" title="Close" class="close" onclick="close();"><div style="float: left"></div><div class="tache"><img src="../../../Resourses/Images/close.svg" width=30 height=20></div></a> 
+                                <div class="title">  <h1><b>...PERROS DE TRABAJO...</b></h1></div>
+                                <br>
+                                  <p> ¿Cuáles son los “empleos” de los perros de trabajo?
+                                          Que haya perros de trabajo, no quiere 
+                                          decir que puedan hacer cualquier tarea. Según sus 
+                                          personalidades, temperamento y características físicas,
+                                           se los entrena para un empleo particular. 
+                                          Los más frecuentes son: Policia, Deteccion, Terapia, Pastoreo
+                                          y de Trabajo
+                                  </p>
+                                  <br>
+                                  <img src="../../../Resourses/Images/trabaj.jpg" width=40% height=30% class="ABC">
+                                  <a href="https://misanimales.com/razas-perros-trabajo/"><p>Más información...</p></a>
+                              </div>
+                          </div>
+      
+                   <div class="contenedor" id="cinco"><img src="../../../Resourses/Images/peque.jpg" id="h">
+                   <p class="texto"><a href="#je">...Bichon Boloñes...</a></p></div>
+                   <div id="je" class="algo">
+                          <div>
+                                  <a href="#close" title="Close" class="close" onclick="close();"><div style="float: left"></div><div class="tache"><img src="../../../Resourses/Images/close.svg" width=30 height=20></div></a> 
+                                <div class="title">  <h1><b>...Bichón Boloñés...</b></h1></div><br>
+                                  <p>Suelen considerarse perros de compañia, Un buen ejemplo es esta bola de algodon
+                                      la cual estuvo muy de moda en Europa entre los siglos XV-XVI, es conocido por
+                                  </p>
+                                  <img src="../../../Resourses/Images/bicho.jpg" width=30% height=20% class="ABC">
+                                  <img src="../../../Resourses/Images/bichon.jpg" width=30% height=20% class="ABC">
+                                  <a href="http://www.mundoanimalia.com/perro/bichon_bolones"><p>Más información...</p></a>
+                              </div>
+                          </div>
+                   
+                   <div class="contenedor" id="seis"><img src="../../../Resourses/Images/grandes.jpg" id="h" >
+                   <p class="texto"><a href="#jo">...San Bernardo...</a></p></div>
+                   <div id="jo" class="algo">
+                          <div>
+                                  <a href="#close" title="Close" class="close" onclick="close();"><div style="float: left"></div><div class="tache"><img src="../../../Resourses/Images/close.svg" width=30 height=20></div></a> 
+                                <div class="title">  <h1><b>...SAN BERNARDO...</b></h1></div><br>
+                                  <p> Es una raza originaria de los Alpes Suizos y el norte de Italia.  </p>
+                                  <p>Características físicas:<br>
+                                          Rústico, Musculoso, Proporcionado</p>
+                                  <p>Ideal para:<br>
+                                          Niños, Casas, Vigilancia</p>
+                                  <p>Carácter:<br>
+                                          Equilibrado, Muy fiel, Inteligente, Cariñoso</p>
+                                  <img src="../../../Resourses/Images/san.jpg" width=30% height=20% class="ABC">
+                                  <img src="../../../Resourses/Images/bernardo.jpg" width=30% height=20% class="ABC">
+                                  <a href="https://www.expertoanimal.com/razas-de-perros/san-bernardo.html"><p>Más información...</p></a>
+                              </div>
+                          </div>
+               
+                </div>
+            
+            <div style="float: left; display: table; width: 20%;height: 100%"></div>
+            
+
+        </section>
+        <script src="../../../JavaScript/Buscador.js"></script>
+    </body>
+</html>
+
